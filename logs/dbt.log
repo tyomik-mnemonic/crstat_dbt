@@ -1,0 +1,2422 @@
+2020-04-29 03:08:35.155495 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:08:35.212095 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', show=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2020-04-29 03:08:35.212474 (MainThread): Tracking: do not track
+2020-04-29 03:08:35.229681 (MainThread): Partial parsing not enabled
+2020-04-29 03:08:35.231703 (MainThread): Parsing macros/core.sql
+2020-04-29 03:08:35.236248 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:08:35.276513 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:08:35.277765 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:08:35.280010 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:08:35.281161 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:08:35.290468 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:08:35.292635 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:08:35.293748 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:08:35.295479 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:08:35.297618 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:08:35.298924 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:08:35.300098 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:08:35.301285 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:08:35.308532 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:08:35.320795 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:08:35.327017 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:08:35.328871 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:08:35.359658 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:08:35.376110 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:08:35.378224 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:08:35.384624 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:08:35.404129 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:08:35.408945 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:08:35.415070 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:08:35.416691 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:08:35.432024 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:08:35.434414 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:08:35.451771 (MainThread): Partial parsing not enabled
+2020-04-29 03:08:35.475865 (MainThread): Acquiring new postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:08:35.476028 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.491402 (MainThread): Acquiring new postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:08:35.491551 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.558557 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_my_first_dbt_model_id".
+2020-04-29 03:08:35.558716 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.567798 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_my_first_dbt_model_id".
+2020-04-29 03:08:35.567949 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.576271 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_my_second_dbt_model_id".
+2020-04-29 03:08:35.576437 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.583514 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_my_second_dbt_model_id".
+2020-04-29 03:08:35.583669 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.704818 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:08:35.708433 (MainThread): 
+2020-04-29 03:08:35.708805 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:08:35.708890 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:08:35.713568 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:08:35.713865 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:08:35.824944 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:08:35.825111 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:08:35.841781 (ThreadPoolExecutor-0_0): SQL status: SELECT 6 in 0.02 seconds
+2020-04-29 03:08:35.844878 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "create_postgres_dbt".
+2020-04-29 03:08:35.845040 (ThreadPoolExecutor-0_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:08:35.845145 (ThreadPoolExecutor-0_0): Creating schema "postgres"."dbt".
+2020-04-29 03:08:35.847267 (ThreadPoolExecutor-0_0): Using postgres connection "create_postgres_dbt".
+2020-04-29 03:08:35.847421 (ThreadPoolExecutor-0_0): On create_postgres_dbt: BEGIN
+2020-04-29 03:08:35.848288 (ThreadPoolExecutor-0_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:08:35.848550 (ThreadPoolExecutor-0_0): Using postgres connection "create_postgres_dbt".
+2020-04-29 03:08:35.848766 (ThreadPoolExecutor-0_0): On create_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "create_postgres_dbt"} */
+create schema if not exists "dbt"
+2020-04-29 03:08:35.850824 (ThreadPoolExecutor-0_0): SQL status: CREATE SCHEMA in 0.00 seconds
+2020-04-29 03:08:35.851899 (ThreadPoolExecutor-0_0): On create_postgres_dbt: COMMIT
+2020-04-29 03:08:35.852023 (ThreadPoolExecutor-0_0): Using postgres connection "create_postgres_dbt".
+2020-04-29 03:08:35.852097 (ThreadPoolExecutor-0_0): On create_postgres_dbt: COMMIT
+2020-04-29 03:08:35.852879 (ThreadPoolExecutor-0_0): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:08:35.892034 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-04-29 03:08:35.892404 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly create_postgres_dbt).
+2020-04-29 03:08:35.896107 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:08:35.896398 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-04-29 03:08:35.896790 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:08:35.897013 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:08:35.897185 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-04-29 03:08:35.905241 (ThreadPoolExecutor-1_0): SQL status: SELECT 0 in 0.01 seconds
+2020-04-29 03:08:35.907346 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-04-29 03:08:35.965335 (MainThread): Using postgres connection "master".
+2020-04-29 03:08:35.965522 (MainThread): On master: BEGIN
+2020-04-29 03:08:35.969363 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:08:35.969569 (MainThread): Using postgres connection "master".
+2020-04-29 03:08:35.969698 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:08:35.976712 (MainThread): SQL status: SELECT 0 in 0.01 seconds
+2020-04-29 03:08:35.978051 (MainThread): On master: ROLLBACK
+2020-04-29 03:08:35.978386 (MainThread): Using postgres connection "master".
+2020-04-29 03:08:35.978521 (MainThread): On master: BEGIN
+2020-04-29 03:08:35.978805 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:08:35.978955 (MainThread): On master: COMMIT
+2020-04-29 03:08:35.979058 (MainThread): Using postgres connection "master".
+2020-04-29 03:08:35.979157 (MainThread): On master: COMMIT
+2020-04-29 03:08:35.979390 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:08:35.979826 (MainThread): 06:08:35 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:08:35.980018 (MainThread): 06:08:35 | 
+2020-04-29 03:08:35.987081 (Thread-1): Began running node seed.crstat_dbt.crime
+2020-04-29 03:08:35.987458 (Thread-1): 06:08:35 | 1 of 1 START seed file dbt.crime..................................... [RUN]
+2020-04-29 03:08:35.988128 (Thread-1): Acquiring new postgres connection "seed.crstat_dbt.crime".
+2020-04-29 03:08:35.988353 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-04-29 03:08:35.988571 (Thread-1): finished collecting timing info
+2020-04-29 03:08:36.027506 (Thread-1): finished collecting timing info
+2020-04-29 03:08:36.028027 (Thread-1): Compilation Error in seed crime (data/crime.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+  
+  > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+  > called by seed crime (data/crime.csv)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/context/providers.py", line 539, in load_agate_table
+    table = agate_helper.from_csv(path, text_columns=column_types)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/agate_helper.py", line 118, in from_csv
+    if fp.read(1) != BOM:
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 380, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/context/providers.py", line 541, in load_agate_table
+    raise_compiler_error(str(e))
+  File "/usr/lib/python3.8/site-packages/dbt/exceptions.py", line 363, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in seed crime (data/crime.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+  
+  > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+  > called by seed crime (data/crime.csv)
+2020-04-29 03:08:36.029788 (Thread-1): 06:08:36 | 1 of 1 ERROR loading seed file dbt.crime............................. [ERROR in 0.04s]
+2020-04-29 03:08:36.029951 (Thread-1): Finished running node seed.crstat_dbt.crime
+2020-04-29 03:08:36.031312 (MainThread): Using postgres connection "master".
+2020-04-29 03:08:36.031596 (MainThread): On master: BEGIN
+2020-04-29 03:08:36.032045 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:08:36.032200 (MainThread): On master: COMMIT
+2020-04-29 03:08:36.032262 (MainThread): Using postgres connection "master".
+2020-04-29 03:08:36.032320 (MainThread): On master: COMMIT
+2020-04-29 03:08:36.032539 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:08:36.032919 (MainThread): 06:08:36 | 
+2020-04-29 03:08:36.033045 (MainThread): 06:08:36 | Finished running 1 seed in 0.32s.
+2020-04-29 03:08:36.033128 (MainThread): Connection 'master' was left open.
+2020-04-29 03:08:36.033194 (MainThread): On master: Close
+2020-04-29 03:08:36.033301 (MainThread): Connection 'seed.crstat_dbt.crime' was left open.
+2020-04-29 03:08:36.033365 (MainThread): On seed.crstat_dbt.crime: Close
+2020-04-29 03:08:36.035767 (MainThread): 
+2020-04-29 03:08:36.035960 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:08:36.036053 (MainThread): 
+2020-04-29 03:08:36.036150 (MainThread): Compilation Error in seed crime (data/crime.csv)
+2020-04-29 03:08:36.036240 (MainThread):   'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+2020-04-29 03:08:36.036307 (MainThread):   
+2020-04-29 03:08:36.036369 (MainThread):   > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+2020-04-29 03:08:36.036432 (MainThread):   > called by seed crime (data/crime.csv)
+2020-04-29 03:08:36.036502 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:08:36.036652 (MainThread): Flushing usage events
+2020-04-29 03:14:39.369270 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:14:39.423051 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:14:39.423350 (MainThread): Tracking: do not track
+2020-04-29 03:14:39.439338 (MainThread): Partial parsing not enabled
+2020-04-29 03:14:39.441418 (MainThread): Parsing macros/core.sql
+2020-04-29 03:14:39.445985 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:14:39.484027 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:14:39.485399 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:14:39.487713 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:14:39.488871 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:14:39.496705 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:14:39.498917 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:14:39.500144 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:14:39.501993 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:14:39.504314 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:14:39.505663 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:14:39.506781 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:14:39.508102 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:14:39.515015 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:14:39.526692 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:14:39.532922 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:14:39.534954 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:14:39.564309 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:14:39.579402 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:14:39.581418 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:14:39.587225 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:14:39.605772 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:14:39.610854 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:14:39.617439 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:14:39.619248 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:14:39.634580 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:14:39.637016 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:14:39.654400 (MainThread): Partial parsing not enabled
+2020-04-29 03:14:39.678798 (MainThread): Acquiring new postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:39.678954 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.693829 (MainThread): Acquiring new postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:39.693983 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.758916 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_my_first_dbt_model_id".
+2020-04-29 03:14:39.759101 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.768810 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_my_first_dbt_model_id".
+2020-04-29 03:14:39.768985 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.777984 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_my_second_dbt_model_id".
+2020-04-29 03:14:39.778141 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.785407 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_my_second_dbt_model_id".
+2020-04-29 03:14:39.785563 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.901873 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:14:39.905625 (MainThread): 
+2020-04-29 03:14:39.906122 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:14:39.906252 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:14:39.912933 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:14:39.913217 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:14:39.996303 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:14:39.996452 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:14:40.001474 (ThreadPoolExecutor-0_0): SQL status: SELECT 7 in 0.00 seconds
+2020-04-29 03:14:40.055041 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-04-29 03:14:40.055411 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:14:40.058712 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:14:40.058984 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-04-29 03:14:40.059663 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:14:40.059940 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:14:40.060138 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-04-29 03:14:40.064882 (ThreadPoolExecutor-1_0): SQL status: SELECT 0 in 0.00 seconds
+2020-04-29 03:14:40.067029 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-04-29 03:14:40.120115 (MainThread): Using postgres connection "master".
+2020-04-29 03:14:40.120260 (MainThread): On master: BEGIN
+2020-04-29 03:14:40.123723 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:14:40.123899 (MainThread): Using postgres connection "master".
+2020-04-29 03:14:40.123967 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:14:40.128871 (MainThread): SQL status: SELECT 0 in 0.00 seconds
+2020-04-29 03:14:40.129839 (MainThread): On master: ROLLBACK
+2020-04-29 03:14:40.130093 (MainThread): Using postgres connection "master".
+2020-04-29 03:14:40.130173 (MainThread): On master: BEGIN
+2020-04-29 03:14:40.130423 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:14:40.130511 (MainThread): On master: COMMIT
+2020-04-29 03:14:40.130569 (MainThread): Using postgres connection "master".
+2020-04-29 03:14:40.130624 (MainThread): On master: COMMIT
+2020-04-29 03:14:40.130768 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:14:40.131040 (MainThread): 06:14:40 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:14:40.131160 (MainThread): 06:14:40 | 
+2020-04-29 03:14:40.133939 (Thread-1): Began running node model.crstat_dbt.my_first_dbt_model
+2020-04-29 03:14:40.134333 (Thread-1): 06:14:40 | 1 of 2 START table model dbt.my_first_dbt_model...................... [RUN]
+2020-04-29 03:14:40.135081 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.135331 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-04-29 03:14:40.135568 (Thread-1): Compiling model.crstat_dbt.my_first_dbt_model
+2020-04-29 03:14:40.176692 (Thread-1): Writing injected SQL for node "model.crstat_dbt.my_first_dbt_model"
+2020-04-29 03:14:40.177690 (Thread-1): finished collecting timing info
+2020-04-29 03:14:40.198247 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.198427 (Thread-1): On model.crstat_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_first_dbt_model"} */
+drop table if exists "postgres"."dbt"."my_first_dbt_model__dbt_tmp" cascade
+2020-04-29 03:14:40.199102 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:14:40.202307 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.202471 (Thread-1): On model.crstat_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_first_dbt_model"} */
+drop table if exists "postgres"."dbt"."my_first_dbt_model__dbt_backup" cascade
+2020-04-29 03:14:40.202961 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:14:40.216038 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.my_first_dbt_model"
+2020-04-29 03:14:40.216577 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.216714 (Thread-1): On model.crstat_dbt.my_first_dbt_model: BEGIN
+2020-04-29 03:14:40.217115 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:14:40.217329 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.217471 (Thread-1): On model.crstat_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_first_dbt_model"} */
+
+
+  create  table "postgres"."dbt"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-04-29 03:14:40.226318 (Thread-1): SQL status: SELECT 2 in 0.01 seconds
+2020-04-29 03:14:40.229972 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.230129 (Thread-1): On model.crstat_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_first_dbt_model"} */
+alter table "postgres"."dbt"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2020-04-29 03:14:40.230634 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-04-29 03:14:40.231758 (Thread-1): On model.crstat_dbt.my_first_dbt_model: COMMIT
+2020-04-29 03:14:40.231894 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.231974 (Thread-1): On model.crstat_dbt.my_first_dbt_model: COMMIT
+2020-04-29 03:14:40.232966 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:14:40.235103 (Thread-1): Using postgres connection "model.crstat_dbt.my_first_dbt_model".
+2020-04-29 03:14:40.235265 (Thread-1): On model.crstat_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_first_dbt_model"} */
+drop table if exists "postgres"."dbt"."my_first_dbt_model__dbt_backup" cascade
+2020-04-29 03:14:40.235613 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:14:40.238431 (Thread-1): finished collecting timing info
+2020-04-29 03:14:40.239129 (Thread-1): 06:14:40 | 1 of 2 OK created table model dbt.my_first_dbt_model................. [SELECT 2 in 0.10s]
+2020-04-29 03:14:40.239299 (Thread-1): Finished running node model.crstat_dbt.my_first_dbt_model
+2020-04-29 03:14:40.239993 (Thread-1): Began running node model.crstat_dbt.my_second_dbt_model
+2020-04-29 03:14:40.240148 (Thread-1): 06:14:40 | 2 of 2 START view model dbt.my_second_dbt_model...................... [RUN]
+2020-04-29 03:14:40.240420 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.240485 (Thread-1): Re-using an available connection from the pool (formerly model.crstat_dbt.my_first_dbt_model).
+2020-04-29 03:14:40.240551 (Thread-1): Compiling model.crstat_dbt.my_second_dbt_model
+2020-04-29 03:14:40.246539 (Thread-1): Writing injected SQL for node "model.crstat_dbt.my_second_dbt_model"
+2020-04-29 03:14:40.246843 (Thread-1): finished collecting timing info
+2020-04-29 03:14:40.263399 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.263587 (Thread-1): On model.crstat_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_second_dbt_model"} */
+drop view if exists "postgres"."dbt"."my_second_dbt_model__dbt_tmp" cascade
+2020-04-29 03:14:40.264078 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-04-29 03:14:40.266298 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.266448 (Thread-1): On model.crstat_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_second_dbt_model"} */
+drop view if exists "postgres"."dbt"."my_second_dbt_model__dbt_backup" cascade
+2020-04-29 03:14:40.266835 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-04-29 03:14:40.268387 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.my_second_dbt_model"
+2020-04-29 03:14:40.268766 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.268876 (Thread-1): On model.crstat_dbt.my_second_dbt_model: BEGIN
+2020-04-29 03:14:40.269153 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:14:40.269277 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.269345 (Thread-1): On model.crstat_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_second_dbt_model"} */
+
+  create view "postgres"."dbt"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "postgres"."dbt"."my_first_dbt_model"
+where id = 1
+  );
+
+2020-04-29 03:14:40.272632 (Thread-1): SQL status: CREATE VIEW in 0.00 seconds
+2020-04-29 03:14:40.276335 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.276480 (Thread-1): On model.crstat_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_second_dbt_model"} */
+alter table "postgres"."dbt"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2020-04-29 03:14:40.277204 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-04-29 03:14:40.278129 (Thread-1): On model.crstat_dbt.my_second_dbt_model: COMMIT
+2020-04-29 03:14:40.278264 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.278326 (Thread-1): On model.crstat_dbt.my_second_dbt_model: COMMIT
+2020-04-29 03:14:40.279180 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:14:40.280930 (Thread-1): Using postgres connection "model.crstat_dbt.my_second_dbt_model".
+2020-04-29 03:14:40.281073 (Thread-1): On model.crstat_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.my_second_dbt_model"} */
+drop view if exists "postgres"."dbt"."my_second_dbt_model__dbt_backup" cascade
+2020-04-29 03:14:40.281409 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-04-29 03:14:40.283656 (Thread-1): finished collecting timing info
+2020-04-29 03:14:40.284324 (Thread-1): 06:14:40 | 2 of 2 OK created view model dbt.my_second_dbt_model................. [CREATE VIEW in 0.04s]
+2020-04-29 03:14:40.284475 (Thread-1): Finished running node model.crstat_dbt.my_second_dbt_model
+2020-04-29 03:14:40.285891 (MainThread): Using postgres connection "master".
+2020-04-29 03:14:40.286189 (MainThread): On master: BEGIN
+2020-04-29 03:14:40.286580 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:14:40.286820 (MainThread): On master: COMMIT
+2020-04-29 03:14:40.287027 (MainThread): Using postgres connection "master".
+2020-04-29 03:14:40.287197 (MainThread): On master: COMMIT
+2020-04-29 03:14:40.287512 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:14:40.288181 (MainThread): 06:14:40 | 
+2020-04-29 03:14:40.288504 (MainThread): 06:14:40 | Finished running 1 table model, 1 view model in 0.38s.
+2020-04-29 03:14:40.288786 (MainThread): Connection 'master' was left open.
+2020-04-29 03:14:40.288993 (MainThread): On master: Close
+2020-04-29 03:14:40.289328 (MainThread): Connection 'model.crstat_dbt.my_second_dbt_model' was left open.
+2020-04-29 03:14:40.289605 (MainThread): On model.crstat_dbt.my_second_dbt_model: Close
+2020-04-29 03:14:40.303122 (MainThread): 
+2020-04-29 03:14:40.303538 (MainThread): Completed successfully
+2020-04-29 03:14:40.303801 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2020-04-29 03:14:40.304144 (MainThread): Flushing usage events
+2020-04-29 03:27:04.786072 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:27:04.841536 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:27:04.841826 (MainThread): Tracking: do not track
+2020-04-29 03:27:04.858861 (MainThread): Partial parsing not enabled
+2020-04-29 03:27:04.860996 (MainThread): Parsing macros/core.sql
+2020-04-29 03:27:04.865252 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:27:04.904185 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:27:04.905297 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:27:04.907262 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:27:04.908263 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:27:04.916728 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:27:04.918736 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:27:04.919787 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:27:04.921333 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:27:04.923251 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:27:04.924328 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:27:04.925287 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:27:04.926561 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:27:04.934019 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:27:04.946156 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:27:04.952374 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:27:04.954078 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:27:04.984446 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:27:04.999791 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:27:05.001675 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:27:05.007205 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:27:05.026277 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:27:05.031066 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:27:05.036829 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:27:05.038368 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:27:05.053667 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:27:05.055897 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:27:05.073892 (MainThread): Partial parsing not enabled
+2020-04-29 03:27:05.099078 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:05.099246 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:05.169015 (MainThread): Flushing usage events
+2020-04-29 03:27:05.169227 (MainThread): Connection 'model.crstat_dbt.vandalism' was properly closed.
+2020-04-29 03:27:05.169315 (MainThread): Encountered an error:
+2020-04-29 03:27:05.169402 (MainThread): Compilation Error
+  dbt found two schema.yml entries for the same resource named crstat_dbt. Resources and their associated columns may only be described a single time. To fix this, remove the resource entry for crstat_dbt in one of these files:
+    - models/example/schema.yml
+    - models/example/schema.yml
+2020-04-29 03:27:05.170320 (MainThread): Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/lib/python3.8/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/lib/python3.8/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/usr/lib/python3.8/site-packages/dbt/task/runnable.py", line 351, in run
+    self._runtime_initialize()
+  File "/usr/lib/python3.8/site-packages/dbt/task/runnable.py", line 107, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/lib/python3.8/site-packages/dbt/task/runnable.py", line 75, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/lib/python3.8/site-packages/dbt/task/runnable.py", line 63, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/lib/python3.8/site-packages/dbt/perf_utils.py", line 23, in get_full_manifest
+    return load_manifest(config, internal, set_header)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/manifest.py", line 646, in load_manifest
+    return ManifestLoader.load_all(config, internal_manifest, macro_hook)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/manifest.py", line 336, in load_all
+    loader.load(internal_manifest=internal_manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/manifest.py", line 208, in load
+    self.parse_project(project, macro_manifest, old_results)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in parse_project
+    self.parse_with_cache(path, parser, old_results)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/manifest.py", line 138, in parse_with_cache
+    parser.parse_file(block)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/schemas.py", line 302, in parse_file
+    for test_block in parser.parse():
+  File "/usr/lib/python3.8/site-packages/dbt/parser/schemas.py", line 399, in parse
+    self.parse_patch(node_block, refs)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/schemas.py", line 628, in parse_patch
+    self.results.add_patch(self.yaml.file, result)
+  File "/usr/lib/python3.8/site-packages/dbt/parser/results.py", line 133, in add_patch
+    raise_duplicate_patch_name(patch, self.patches[patch.name])
+  File "/usr/lib/python3.8/site-packages/dbt/exceptions.py", line 738, in raise_duplicate_patch_name
+    raise_compiler_error(
+  File "/usr/lib/python3.8/site-packages/dbt/exceptions.py", line 363, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  dbt found two schema.yml entries for the same resource named crstat_dbt. Resources and their associated columns may only be described a single time. To fix this, remove the resource entry for crstat_dbt in one of these files:
+    - models/example/schema.yml
+    - models/example/schema.yml
+
+2020-04-29 03:27:56.430854 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:27:56.486380 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:27:56.486667 (MainThread): Tracking: do not track
+2020-04-29 03:27:56.503775 (MainThread): Partial parsing not enabled
+2020-04-29 03:27:56.505595 (MainThread): Parsing macros/core.sql
+2020-04-29 03:27:56.510059 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:27:56.551664 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:27:56.552886 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:27:56.555067 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:27:56.556094 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:27:56.564467 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:27:56.566560 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:27:56.567642 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:27:56.569260 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:27:56.571201 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:27:56.572293 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:27:56.573235 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:27:56.574325 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:27:56.581726 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:27:56.593644 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:27:56.600021 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:27:56.601782 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:27:56.632062 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:27:56.647761 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:27:56.649691 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:27:56.655364 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:27:56.674771 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:27:56.679530 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:27:56.685580 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:27:56.687083 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:27:56.702944 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:27:56.705213 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:27:56.722973 (MainThread): Partial parsing not enabled
+2020-04-29 03:27:56.747646 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:56.747807 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:56.828646 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_crstat_dbt_INCIDENT_NUMBER".
+2020-04-29 03:27:56.828823 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:56.837541 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_crstat_dbt_INCIDENT_NUMBER".
+2020-04-29 03:27:56.837705 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:56.846523 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_crstat_dbt_OFFENSE_CODE_GROUP".
+2020-04-29 03:27:56.846678 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:56.853772 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_crstat_dbt_OFFENSE_CODE_GROUP".
+2020-04-29 03:27:56.853922 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:56.889705 (MainThread): WARNING: Found documentation for resource "crstat_dbt" which was not found or is disabled
+2020-04-29 03:27:56.889953 (MainThread): WARNING: Test 'test.crstat_dbt.unique_crstat_dbt_INCIDENT_NUMBER' (models/example/schema.yml) depends on a node named 'crstat_dbt' which was not found
+2020-04-29 03:27:56.890068 (MainThread): WARNING: Test 'test.crstat_dbt.not_null_crstat_dbt_INCIDENT_NUMBER' (models/example/schema.yml) depends on a node named 'crstat_dbt' which was not found
+2020-04-29 03:27:56.890154 (MainThread): WARNING: Test 'test.crstat_dbt.unique_crstat_dbt_OFFENSE_CODE_GROUP' (models/example/schema.yml) depends on a node named 'crstat_dbt' which was not found
+2020-04-29 03:27:56.890238 (MainThread): WARNING: Test 'test.crstat_dbt.not_null_crstat_dbt_OFFENSE_CODE_GROUP' (models/example/schema.yml) depends on a node named 'crstat_dbt' which was not found
+2020-04-29 03:27:56.975973 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:27:56.978568 (MainThread): 
+2020-04-29 03:27:56.979022 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:27:56.979140 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:27:56.983808 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:27:56.984117 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:27:57.079197 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:27:57.079363 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:27:57.083820 (ThreadPoolExecutor-0_0): SQL status: SELECT 7 in 0.00 seconds
+2020-04-29 03:27:57.135135 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-04-29 03:27:57.135369 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:27:57.137932 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:27:57.138099 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-04-29 03:27:57.138622 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:27:57.138888 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:27:57.139073 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-04-29 03:27:57.143577 (ThreadPoolExecutor-1_0): SQL status: SELECT 2 in 0.00 seconds
+2020-04-29 03:27:57.147092 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-04-29 03:27:57.195221 (MainThread): Using postgres connection "master".
+2020-04-29 03:27:57.195397 (MainThread): On master: BEGIN
+2020-04-29 03:27:57.198995 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:27:57.199391 (MainThread): Using postgres connection "master".
+2020-04-29 03:27:57.199675 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:27:57.206593 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-04-29 03:27:57.209735 (MainThread): On master: ROLLBACK
+2020-04-29 03:27:57.210080 (MainThread): Using postgres connection "master".
+2020-04-29 03:27:57.210185 (MainThread): On master: BEGIN
+2020-04-29 03:27:57.210440 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:27:57.210567 (MainThread): On master: COMMIT
+2020-04-29 03:27:57.210653 (MainThread): Using postgres connection "master".
+2020-04-29 03:27:57.210723 (MainThread): On master: COMMIT
+2020-04-29 03:27:57.210872 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:27:57.211198 (MainThread): 06:27:57 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:27:57.211338 (MainThread): 06:27:57 | 
+2020-04-29 03:27:57.214569 (Thread-1): Began running node model.crstat_dbt.vandalism
+2020-04-29 03:27:57.214891 (Thread-1): 06:27:57 | 1 of 1 START table model dbt.vandalism............................... [RUN]
+2020-04-29 03:27:57.215480 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:57.215695 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-04-29 03:27:57.215917 (Thread-1): Compiling model.crstat_dbt.vandalism
+2020-04-29 03:27:57.230041 (Thread-1): Writing injected SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:27:57.230400 (Thread-1): finished collecting timing info
+2020-04-29 03:27:57.248390 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:57.248582 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_tmp" cascade
+2020-04-29 03:27:57.249005 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:27:57.251489 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:57.251887 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_backup" cascade
+2020-04-29 03:27:57.252717 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:27:57.267763 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:27:57.268155 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:57.268238 (Thread-1): On model.crstat_dbt.vandalism: BEGIN
+2020-04-29 03:27:57.268503 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:27:57.268591 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:27:57.268649 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+
+
+  create  table "postgres"."dbt"."vandalism__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+--
+
+with source_data as (
+
+   select * from "postgres"."dbt"."crime"
+)
+
+select *
+from source_data
+where OFFENSE_CODE_GROUP = 'Vandalism'
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-04-29 03:27:57.269073 (Thread-1): Postgres error: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+2020-04-29 03:27:57.269219 (Thread-1): On model.crstat_dbt.vandalism: ROLLBACK
+2020-04-29 03:27:57.269445 (Thread-1): finished collecting timing info
+2020-04-29 03:27:57.269907 (Thread-1): Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 46, in exception_handler
+    yield
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 62, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 217, in execute
+    return self.connections.execute(
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 82, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 58, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:27:57.271212 (Thread-1): 06:27:57 | 1 of 1 ERROR creating table model dbt.vandalism...................... [ERROR in 0.06s]
+2020-04-29 03:27:57.271363 (Thread-1): Finished running node model.crstat_dbt.vandalism
+2020-04-29 03:27:57.272608 (MainThread): Using postgres connection "master".
+2020-04-29 03:27:57.272748 (MainThread): On master: BEGIN
+2020-04-29 03:27:57.272988 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:27:57.273082 (MainThread): On master: COMMIT
+2020-04-29 03:27:57.273140 (MainThread): Using postgres connection "master".
+2020-04-29 03:27:57.273195 (MainThread): On master: COMMIT
+2020-04-29 03:27:57.273348 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:27:57.273624 (MainThread): 06:27:57 | 
+2020-04-29 03:27:57.273730 (MainThread): 06:27:57 | Finished running 1 table model in 0.29s.
+2020-04-29 03:27:57.273802 (MainThread): Connection 'master' was left open.
+2020-04-29 03:27:57.273865 (MainThread): On master: Close
+2020-04-29 03:27:57.273962 (MainThread): Connection 'model.crstat_dbt.vandalism' was left open.
+2020-04-29 03:27:57.274020 (MainThread): On model.crstat_dbt.vandalism: Close
+2020-04-29 03:27:57.277101 (MainThread): 
+2020-04-29 03:27:57.277278 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:27:57.277360 (MainThread): 
+2020-04-29 03:27:57.277439 (MainThread): Database Error in model vandalism (models/example/vandalism.sql)
+2020-04-29 03:27:57.277517 (MainThread):   ОШИБКА:  отношение "dbt.crime" не существует
+2020-04-29 03:27:57.277587 (MainThread):   LINE 18:    select * from "postgres"."dbt"."crime"
+2020-04-29 03:27:57.277652 (MainThread):                             ^
+2020-04-29 03:27:57.277715 (MainThread):   compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:27:57.277787 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:27:57.277949 (MainThread): Flushing usage events
+2020-04-29 03:34:08.633726 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:34:08.690071 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:34:08.690348 (MainThread): Tracking: do not track
+2020-04-29 03:34:08.706397 (MainThread): Partial parsing not enabled
+2020-04-29 03:34:08.708178 (MainThread): Parsing macros/core.sql
+2020-04-29 03:34:08.712407 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:34:08.750104 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:34:08.751235 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:34:08.753267 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:34:08.754238 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:34:08.762192 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:34:08.764115 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:34:08.765203 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:34:08.766823 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:34:08.768846 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:34:08.769994 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:34:08.770910 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:34:08.772022 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:34:08.778996 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:34:08.790456 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:34:08.796606 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:34:08.798537 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:34:08.827635 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:34:08.842401 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:34:08.844254 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:34:08.849858 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:34:08.868328 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:34:08.872910 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:34:08.878717 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:34:08.880145 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:34:08.895143 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:34:08.897350 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:34:08.913781 (MainThread): Partial parsing not enabled
+2020-04-29 03:34:08.937199 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:34:08.937350 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:34:09.011531 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:34:09.011692 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:34:09.020143 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:34:09.020295 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:34:09.028571 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:34:09.028722 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:34:09.035288 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:34:09.035435 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:34:09.146308 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:34:09.148911 (MainThread): 
+2020-04-29 03:34:09.149297 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:34:09.149382 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:34:09.153670 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:34:09.153945 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:34:09.260224 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:34:09.260385 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:34:09.265593 (ThreadPoolExecutor-0_0): SQL status: SELECT 7 in 0.01 seconds
+2020-04-29 03:34:09.312802 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-04-29 03:34:09.313240 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:34:09.317095 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:34:09.317408 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-04-29 03:34:09.318106 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:34:09.318414 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:34:09.318687 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-04-29 03:34:09.322885 (ThreadPoolExecutor-1_0): SQL status: SELECT 2 in 0.00 seconds
+2020-04-29 03:34:09.327934 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-04-29 03:34:09.377151 (MainThread): Using postgres connection "master".
+2020-04-29 03:34:09.377450 (MainThread): On master: BEGIN
+2020-04-29 03:34:09.382064 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:34:09.382367 (MainThread): Using postgres connection "master".
+2020-04-29 03:34:09.382544 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:34:09.387674 (MainThread): SQL status: SELECT 1 in 0.00 seconds
+2020-04-29 03:34:09.391999 (MainThread): On master: ROLLBACK
+2020-04-29 03:34:09.392505 (MainThread): Using postgres connection "master".
+2020-04-29 03:34:09.392705 (MainThread): On master: BEGIN
+2020-04-29 03:34:09.393167 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:34:09.393403 (MainThread): On master: COMMIT
+2020-04-29 03:34:09.393551 (MainThread): Using postgres connection "master".
+2020-04-29 03:34:09.393689 (MainThread): On master: COMMIT
+2020-04-29 03:34:09.394033 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:34:09.394675 (MainThread): 06:34:09 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:34:09.394981 (MainThread): 06:34:09 | 
+2020-04-29 03:34:09.400539 (Thread-1): Began running node model.crstat_dbt.vandalism
+2020-04-29 03:34:09.400967 (Thread-1): 06:34:09 | 1 of 1 START table model dbt.vandalism............................... [RUN]
+2020-04-29 03:34:09.401617 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:34:09.401833 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-04-29 03:34:09.402025 (Thread-1): Compiling model.crstat_dbt.vandalism
+2020-04-29 03:34:09.425137 (Thread-1): Writing injected SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:34:09.425598 (Thread-1): finished collecting timing info
+2020-04-29 03:34:09.442547 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:34:09.442723 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_tmp" cascade
+2020-04-29 03:34:09.443157 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:34:09.445299 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:34:09.445442 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_backup" cascade
+2020-04-29 03:34:09.445741 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:34:09.459239 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:34:09.459677 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:34:09.459770 (Thread-1): On model.crstat_dbt.vandalism: BEGIN
+2020-04-29 03:34:09.460034 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:34:09.460121 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:34:09.460179 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+
+
+  create  table "postgres"."dbt"."vandalism__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+--
+
+with source_data as (
+
+   select * from "postgres"."dbt"."crime"
+)
+
+select *
+from source_data
+where OFFENSE_CODE_GROUP = 'Vandalism'
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-04-29 03:34:09.460481 (Thread-1): Postgres error: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+2020-04-29 03:34:09.460574 (Thread-1): On model.crstat_dbt.vandalism: ROLLBACK
+2020-04-29 03:34:09.460771 (Thread-1): finished collecting timing info
+2020-04-29 03:34:09.461201 (Thread-1): Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 46, in exception_handler
+    yield
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 62, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 217, in execute
+    return self.connections.execute(
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 82, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 58, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:34:09.462439 (Thread-1): 06:34:09 | 1 of 1 ERROR creating table model dbt.vandalism...................... [ERROR in 0.06s]
+2020-04-29 03:34:09.462612 (Thread-1): Finished running node model.crstat_dbt.vandalism
+2020-04-29 03:34:09.464305 (MainThread): Using postgres connection "master".
+2020-04-29 03:34:09.464616 (MainThread): On master: BEGIN
+2020-04-29 03:34:09.465035 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:34:09.465303 (MainThread): On master: COMMIT
+2020-04-29 03:34:09.465517 (MainThread): Using postgres connection "master".
+2020-04-29 03:34:09.465696 (MainThread): On master: COMMIT
+2020-04-29 03:34:09.466051 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:34:09.466778 (MainThread): 06:34:09 | 
+2020-04-29 03:34:09.467093 (MainThread): 06:34:09 | Finished running 1 table model in 0.32s.
+2020-04-29 03:34:09.467394 (MainThread): Connection 'master' was left open.
+2020-04-29 03:34:09.467636 (MainThread): On master: Close
+2020-04-29 03:34:09.467914 (MainThread): Connection 'model.crstat_dbt.vandalism' was left open.
+2020-04-29 03:34:09.468106 (MainThread): On model.crstat_dbt.vandalism: Close
+2020-04-29 03:34:09.475091 (MainThread): 
+2020-04-29 03:34:09.475587 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:34:09.476025 (MainThread): 
+2020-04-29 03:34:09.476378 (MainThread): Database Error in model vandalism (models/example/vandalism.sql)
+2020-04-29 03:34:09.476563 (MainThread):   ОШИБКА:  отношение "dbt.crime" не существует
+2020-04-29 03:34:09.476716 (MainThread):   LINE 18:    select * from "postgres"."dbt"."crime"
+2020-04-29 03:34:09.476855 (MainThread):                             ^
+2020-04-29 03:34:09.476978 (MainThread):   compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:34:09.477116 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:34:09.477361 (MainThread): Flushing usage events
+2020-04-29 03:39:41.690468 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:39:41.745695 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:39:41.746030 (MainThread): Tracking: do not track
+2020-04-29 03:39:41.762917 (MainThread): Partial parsing not enabled
+2020-04-29 03:39:41.764951 (MainThread): Parsing macros/core.sql
+2020-04-29 03:39:41.769665 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:39:41.807170 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:39:41.808594 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:39:41.810843 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:39:41.811963 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:39:41.819980 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:39:41.822436 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:39:41.823724 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:39:41.825539 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:39:41.827806 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:39:41.829145 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:39:41.830268 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:39:41.831530 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:39:41.839246 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:39:41.851159 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:39:41.857665 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:39:41.859879 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:39:41.889162 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:39:41.904360 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:39:41.906559 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:39:41.912772 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:39:41.931672 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:39:41.936468 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:39:41.942236 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:39:41.943974 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:39:41.958925 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:39:41.961260 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:39:41.977994 (MainThread): Partial parsing not enabled
+2020-04-29 03:39:42.001012 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:39:42.001161 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:39:42.076264 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:39:42.076415 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:39:42.084861 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:39:42.085015 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:39:42.093128 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:39:42.093275 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:39:42.099902 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:39:42.100052 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:39:42.210797 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:39:42.213380 (MainThread): 
+2020-04-29 03:39:42.213749 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:39:42.213826 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:39:42.218142 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:39:42.218486 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:39:42.300499 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:39:42.300659 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:39:42.306768 (ThreadPoolExecutor-0_0): SQL status: SELECT 7 in 0.01 seconds
+2020-04-29 03:39:42.309766 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "create_postgres_vandalism".
+2020-04-29 03:39:42.309896 (ThreadPoolExecutor-0_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:39:42.309953 (ThreadPoolExecutor-0_0): Creating schema "postgres"."vandalism".
+2020-04-29 03:39:42.311440 (ThreadPoolExecutor-0_0): Using postgres connection "create_postgres_vandalism".
+2020-04-29 03:39:42.311549 (ThreadPoolExecutor-0_0): On create_postgres_vandalism: BEGIN
+2020-04-29 03:39:42.311979 (ThreadPoolExecutor-0_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:39:42.312065 (ThreadPoolExecutor-0_0): Using postgres connection "create_postgres_vandalism".
+2020-04-29 03:39:42.312120 (ThreadPoolExecutor-0_0): On create_postgres_vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "create_postgres_vandalism"} */
+create schema if not exists "vandalism"
+2020-04-29 03:39:42.312706 (ThreadPoolExecutor-0_0): SQL status: CREATE SCHEMA in 0.00 seconds
+2020-04-29 03:39:42.313518 (ThreadPoolExecutor-0_0): On create_postgres_vandalism: COMMIT
+2020-04-29 03:39:42.313607 (ThreadPoolExecutor-0_0): Using postgres connection "create_postgres_vandalism".
+2020-04-29 03:39:42.313672 (ThreadPoolExecutor-0_0): On create_postgres_vandalism: COMMIT
+2020-04-29 03:39:42.314507 (ThreadPoolExecutor-0_0): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:39:42.348721 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_vandalism".
+2020-04-29 03:39:42.349060 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly create_postgres_vandalism).
+2020-04-29 03:39:42.350856 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_vandalism".
+2020-04-29 03:39:42.350992 (ThreadPoolExecutor-1_0): On list_postgres_vandalism: BEGIN
+2020-04-29 03:39:42.351267 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:39:42.351342 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_vandalism".
+2020-04-29 03:39:42.351396 (ThreadPoolExecutor-1_0): On list_postgres_vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_vandalism"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'vandalism'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'vandalism'
+  
+2020-04-29 03:39:42.355755 (ThreadPoolExecutor-1_0): SQL status: SELECT 0 in 0.00 seconds
+2020-04-29 03:39:42.356798 (ThreadPoolExecutor-1_0): On list_postgres_vandalism: ROLLBACK
+2020-04-29 03:39:42.384161 (MainThread): Using postgres connection "master".
+2020-04-29 03:39:42.384312 (MainThread): On master: BEGIN
+2020-04-29 03:39:42.388112 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:39:42.388398 (MainThread): Using postgres connection "master".
+2020-04-29 03:39:42.388561 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:39:42.395153 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-04-29 03:39:42.399158 (MainThread): On master: ROLLBACK
+2020-04-29 03:39:42.399631 (MainThread): Using postgres connection "master".
+2020-04-29 03:39:42.399843 (MainThread): On master: BEGIN
+2020-04-29 03:39:42.400300 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:39:42.400522 (MainThread): On master: COMMIT
+2020-04-29 03:39:42.400684 (MainThread): Using postgres connection "master".
+2020-04-29 03:39:42.400841 (MainThread): On master: COMMIT
+2020-04-29 03:39:42.401163 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:39:42.401765 (MainThread): 06:39:42 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:39:42.402058 (MainThread): 06:39:42 | 
+2020-04-29 03:39:42.407409 (Thread-1): Began running node model.crstat_dbt.vandalism
+2020-04-29 03:39:42.407821 (Thread-1): 06:39:42 | 1 of 1 START table model vandalism.vandalism......................... [RUN]
+2020-04-29 03:39:42.408472 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:39:42.408705 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_vandalism).
+2020-04-29 03:39:42.408891 (Thread-1): Compiling model.crstat_dbt.vandalism
+2020-04-29 03:39:42.427389 (Thread-1): Writing injected SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:39:42.427777 (Thread-1): finished collecting timing info
+2020-04-29 03:39:42.446346 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:39:42.446522 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."vandalism"."vandalism__dbt_tmp" cascade
+2020-04-29 03:39:42.447096 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:39:42.450252 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:39:42.450403 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."vandalism"."vandalism__dbt_backup" cascade
+2020-04-29 03:39:42.450814 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:39:42.465220 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:39:42.465684 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:39:42.465812 (Thread-1): On model.crstat_dbt.vandalism: BEGIN
+2020-04-29 03:39:42.466180 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:39:42.466281 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:39:42.466351 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+
+
+  create  table "postgres"."vandalism"."vandalism__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+--
+
+with source_data as (
+
+   select * from "postgres"."vandalism"."crime"
+)
+
+select *
+from source_data
+where OFFENSE_CODE_GROUP = 'Vandalism'
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-04-29 03:39:42.466848 (Thread-1): Postgres error: ОШИБКА:  отношение "vandalism.crime" не существует
+LINE 18:    select * from "postgres"."vandalism"."crime"
+                          ^
+
+2020-04-29 03:39:42.466984 (Thread-1): On model.crstat_dbt.vandalism: ROLLBACK
+2020-04-29 03:39:42.467288 (Thread-1): finished collecting timing info
+2020-04-29 03:39:42.467848 (Thread-1): Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "vandalism.crime" не существует
+  LINE 18:    select * from "postgres"."vandalism"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 46, in exception_handler
+    yield
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "vandalism.crime" не существует
+LINE 18:    select * from "postgres"."vandalism"."crime"
+                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 62, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 217, in execute
+    return self.connections.execute(
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 82, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 58, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "vandalism.crime" не существует
+  LINE 18:    select * from "postgres"."vandalism"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:39:42.469310 (Thread-1): 06:39:42 | 1 of 1 ERROR creating table model vandalism.vandalism................ [ERROR in 0.06s]
+2020-04-29 03:39:42.469476 (Thread-1): Finished running node model.crstat_dbt.vandalism
+2020-04-29 03:39:42.470820 (MainThread): Using postgres connection "master".
+2020-04-29 03:39:42.470971 (MainThread): On master: BEGIN
+2020-04-29 03:39:42.471232 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:39:42.471340 (MainThread): On master: COMMIT
+2020-04-29 03:39:42.471402 (MainThread): Using postgres connection "master".
+2020-04-29 03:39:42.471461 (MainThread): On master: COMMIT
+2020-04-29 03:39:42.471616 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:39:42.471911 (MainThread): 06:39:42 | 
+2020-04-29 03:39:42.472025 (MainThread): 06:39:42 | Finished running 1 table model in 0.26s.
+2020-04-29 03:39:42.472107 (MainThread): Connection 'master' was left open.
+2020-04-29 03:39:42.472173 (MainThread): On master: Close
+2020-04-29 03:39:42.472273 (MainThread): Connection 'model.crstat_dbt.vandalism' was left open.
+2020-04-29 03:39:42.472338 (MainThread): On model.crstat_dbt.vandalism: Close
+2020-04-29 03:39:42.475193 (MainThread): 
+2020-04-29 03:39:42.475360 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:39:42.475447 (MainThread): 
+2020-04-29 03:39:42.475531 (MainThread): Database Error in model vandalism (models/example/vandalism.sql)
+2020-04-29 03:39:42.475607 (MainThread):   ОШИБКА:  отношение "vandalism.crime" не существует
+2020-04-29 03:39:42.475681 (MainThread):   LINE 18:    select * from "postgres"."vandalism"."crime"
+2020-04-29 03:39:42.475780 (MainThread):                             ^
+2020-04-29 03:39:42.475856 (MainThread):   compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:39:42.475932 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:39:42.476079 (MainThread): Flushing usage events
+2020-04-29 03:40:08.391064 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:40:08.445815 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', show=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2020-04-29 03:40:08.446115 (MainThread): Tracking: do not track
+2020-04-29 03:40:08.462823 (MainThread): Partial parsing not enabled
+2020-04-29 03:40:08.464644 (MainThread): Parsing macros/core.sql
+2020-04-29 03:40:08.468855 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:40:08.506607 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:40:08.507712 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:40:08.509705 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:40:08.510647 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:40:08.518612 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:40:08.520526 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:40:08.521531 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:40:08.523086 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:40:08.524973 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:40:08.526062 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:40:08.526977 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:40:08.528089 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:40:08.535151 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:40:08.546720 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:40:08.552926 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:40:08.554680 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:40:08.584986 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:40:08.600409 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:40:08.602294 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:40:08.607747 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:40:08.626536 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:40:08.631151 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:40:08.637067 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:40:08.638529 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:40:08.653917 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:40:08.656171 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:40:08.673001 (MainThread): Partial parsing not enabled
+2020-04-29 03:40:08.697004 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:40:08.697153 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:40:08.773301 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:40:08.773450 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:40:08.782105 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:40:08.782251 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:40:08.790563 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:40:08.790705 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:40:08.797402 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:40:08.797544 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:40:08.911897 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:40:08.914431 (MainThread): 
+2020-04-29 03:40:08.914802 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:40:08.914886 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:40:08.919238 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:40:08.919521 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:40:09.024910 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:40:09.025069 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:40:09.030218 (ThreadPoolExecutor-0_0): SQL status: SELECT 8 in 0.01 seconds
+2020-04-29 03:40:09.076497 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_vandalism".
+2020-04-29 03:40:09.076912 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:40:09.080275 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_vandalism".
+2020-04-29 03:40:09.080548 (ThreadPoolExecutor-1_0): On list_postgres_vandalism: BEGIN
+2020-04-29 03:40:09.081187 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:40:09.081408 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_vandalism".
+2020-04-29 03:40:09.081563 (ThreadPoolExecutor-1_0): On list_postgres_vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_vandalism"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'vandalism'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'vandalism'
+  
+2020-04-29 03:40:09.085926 (ThreadPoolExecutor-1_0): SQL status: SELECT 0 in 0.00 seconds
+2020-04-29 03:40:09.087810 (ThreadPoolExecutor-1_0): On list_postgres_vandalism: ROLLBACK
+2020-04-29 03:40:09.137314 (MainThread): Using postgres connection "master".
+2020-04-29 03:40:09.137459 (MainThread): On master: BEGIN
+2020-04-29 03:40:09.141094 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:40:09.141282 (MainThread): Using postgres connection "master".
+2020-04-29 03:40:09.141359 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:40:09.147407 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-04-29 03:40:09.149372 (MainThread): On master: ROLLBACK
+2020-04-29 03:40:09.149715 (MainThread): Using postgres connection "master".
+2020-04-29 03:40:09.149822 (MainThread): On master: BEGIN
+2020-04-29 03:40:09.150125 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:40:09.150237 (MainThread): On master: COMMIT
+2020-04-29 03:40:09.150310 (MainThread): Using postgres connection "master".
+2020-04-29 03:40:09.150376 (MainThread): On master: COMMIT
+2020-04-29 03:40:09.150579 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:40:09.150918 (MainThread): 06:40:09 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:40:09.151068 (MainThread): 06:40:09 | 
+2020-04-29 03:40:09.153853 (Thread-1): Began running node seed.crstat_dbt.crime
+2020-04-29 03:40:09.154113 (Thread-1): 06:40:09 | 1 of 1 START seed file vandalism.crime............................... [RUN]
+2020-04-29 03:40:09.154642 (Thread-1): Acquiring new postgres connection "seed.crstat_dbt.crime".
+2020-04-29 03:40:09.154797 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_vandalism).
+2020-04-29 03:40:09.154951 (Thread-1): finished collecting timing info
+2020-04-29 03:40:09.192938 (Thread-1): finished collecting timing info
+2020-04-29 03:40:09.193533 (Thread-1): Compilation Error in seed crime (data/crime.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+  
+  > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+  > called by seed crime (data/crime.csv)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/context/providers.py", line 539, in load_agate_table
+    table = agate_helper.from_csv(path, text_columns=column_types)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/agate_helper.py", line 118, in from_csv
+    if fp.read(1) != BOM:
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 380, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/context/providers.py", line 541, in load_agate_table
+    raise_compiler_error(str(e))
+  File "/usr/lib/python3.8/site-packages/dbt/exceptions.py", line 363, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in seed crime (data/crime.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+  
+  > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+  > called by seed crime (data/crime.csv)
+2020-04-29 03:40:09.194893 (Thread-1): 06:40:09 | 1 of 1 ERROR loading seed file vandalism.crime....................... [ERROR in 0.04s]
+2020-04-29 03:40:09.195090 (Thread-1): Finished running node seed.crstat_dbt.crime
+2020-04-29 03:40:09.196756 (MainThread): Using postgres connection "master".
+2020-04-29 03:40:09.197017 (MainThread): On master: BEGIN
+2020-04-29 03:40:09.197406 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:40:09.197608 (MainThread): On master: COMMIT
+2020-04-29 03:40:09.197752 (MainThread): Using postgres connection "master".
+2020-04-29 03:40:09.197902 (MainThread): On master: COMMIT
+2020-04-29 03:40:09.198279 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:40:09.198924 (MainThread): 06:40:09 | 
+2020-04-29 03:40:09.199227 (MainThread): 06:40:09 | Finished running 1 seed in 0.28s.
+2020-04-29 03:40:09.199447 (MainThread): Connection 'master' was left open.
+2020-04-29 03:40:09.199590 (MainThread): On master: Close
+2020-04-29 03:40:09.199828 (MainThread): Connection 'seed.crstat_dbt.crime' was left open.
+2020-04-29 03:40:09.200071 (MainThread): On seed.crstat_dbt.crime: Close
+2020-04-29 03:40:09.206445 (MainThread): 
+2020-04-29 03:40:09.206765 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:40:09.206983 (MainThread): 
+2020-04-29 03:40:09.207186 (MainThread): Compilation Error in seed crime (data/crime.csv)
+2020-04-29 03:40:09.207393 (MainThread):   'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+2020-04-29 03:40:09.207566 (MainThread):   
+2020-04-29 03:40:09.207734 (MainThread):   > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+2020-04-29 03:40:09.207901 (MainThread):   > called by seed crime (data/crime.csv)
+2020-04-29 03:40:09.208081 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:40:09.208387 (MainThread): Flushing usage events
+2020-04-29 03:49:45.026457 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:49:45.079760 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:49:45.080035 (MainThread): Tracking: do not track
+2020-04-29 03:49:45.095970 (MainThread): Partial parsing not enabled
+2020-04-29 03:49:45.097714 (MainThread): Parsing macros/core.sql
+2020-04-29 03:49:45.101946 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:49:45.139064 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:49:45.140126 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:49:45.142111 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:49:45.143061 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:49:45.151028 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:49:45.152941 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:49:45.153940 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:49:45.155527 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:49:45.157391 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:49:45.158468 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:49:45.159370 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:49:45.160463 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:49:45.167506 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:49:45.178903 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:49:45.184846 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:49:45.186593 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:49:45.215203 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:49:45.229790 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:49:45.231644 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:49:45.237168 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:49:45.255189 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:49:45.259682 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:49:45.265330 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:49:45.266705 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:49:45.282105 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:49:45.284303 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:49:45.300963 (MainThread): Partial parsing not enabled
+2020-04-29 03:49:45.324395 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:49:45.324541 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:49:45.399048 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:49:45.399208 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:49:45.407609 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:49:45.407763 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:49:45.416271 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:49:45.416421 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:49:45.423130 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:49:45.423276 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:49:45.535139 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:49:45.537744 (MainThread): 
+2020-04-29 03:49:45.538112 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:49:45.538198 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:49:45.542888 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:49:45.543164 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:49:45.647698 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:49:45.647857 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:49:45.653128 (ThreadPoolExecutor-0_0): SQL status: SELECT 8 in 0.01 seconds
+2020-04-29 03:49:45.697896 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-04-29 03:49:45.698296 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:49:45.701881 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:49:45.702172 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-04-29 03:49:45.702716 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:49:45.702950 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:49:45.703148 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-04-29 03:49:45.707182 (ThreadPoolExecutor-1_0): SQL status: SELECT 2 in 0.00 seconds
+2020-04-29 03:49:45.712492 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-04-29 03:49:45.765105 (MainThread): Using postgres connection "master".
+2020-04-29 03:49:45.765390 (MainThread): On master: BEGIN
+2020-04-29 03:49:45.770410 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:49:45.770656 (MainThread): Using postgres connection "master".
+2020-04-29 03:49:45.770778 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:49:45.778270 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-04-29 03:49:45.781583 (MainThread): On master: ROLLBACK
+2020-04-29 03:49:45.781978 (MainThread): Using postgres connection "master".
+2020-04-29 03:49:45.782129 (MainThread): On master: BEGIN
+2020-04-29 03:49:45.782551 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:49:45.782802 (MainThread): On master: COMMIT
+2020-04-29 03:49:45.782951 (MainThread): Using postgres connection "master".
+2020-04-29 03:49:45.783083 (MainThread): On master: COMMIT
+2020-04-29 03:49:45.783372 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:49:45.783884 (MainThread): 06:49:45 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:49:45.784099 (MainThread): 06:49:45 | 
+2020-04-29 03:49:45.788573 (Thread-1): Began running node model.crstat_dbt.vandalism
+2020-04-29 03:49:45.788992 (Thread-1): 06:49:45 | 1 of 1 START table model dbt.vandalism............................... [RUN]
+2020-04-29 03:49:45.789665 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:49:45.789866 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-04-29 03:49:45.790056 (Thread-1): Compiling model.crstat_dbt.vandalism
+2020-04-29 03:49:45.808867 (Thread-1): Writing injected SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:49:45.809937 (Thread-1): finished collecting timing info
+2020-04-29 03:49:45.827676 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:49:45.827854 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_tmp" cascade
+2020-04-29 03:49:45.828275 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:49:45.830513 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:49:45.830652 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_backup" cascade
+2020-04-29 03:49:45.830957 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:49:45.844659 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:49:45.845105 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:49:45.845210 (Thread-1): On model.crstat_dbt.vandalism: BEGIN
+2020-04-29 03:49:45.845470 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:49:45.845552 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:49:45.845610 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+
+
+  create  table "postgres"."dbt"."vandalism__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+--
+
+with source_data as (
+
+   select * from "postgres"."dbt"."crime"
+)
+
+select *
+from source_data
+where OFFENSE_CODE_GROUP = 'Vandalism'
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-04-29 03:49:45.845927 (Thread-1): Postgres error: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+2020-04-29 03:49:45.846034 (Thread-1): On model.crstat_dbt.vandalism: ROLLBACK
+2020-04-29 03:49:45.846231 (Thread-1): finished collecting timing info
+2020-04-29 03:49:45.846659 (Thread-1): Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 46, in exception_handler
+    yield
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 62, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 217, in execute
+    return self.connections.execute(
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 82, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 58, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:49:45.847883 (Thread-1): 06:49:45 | 1 of 1 ERROR creating table model dbt.vandalism...................... [ERROR in 0.06s]
+2020-04-29 03:49:45.848021 (Thread-1): Finished running node model.crstat_dbt.vandalism
+2020-04-29 03:49:45.849741 (MainThread): Using postgres connection "master".
+2020-04-29 03:49:45.849985 (MainThread): On master: BEGIN
+2020-04-29 03:49:45.850427 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:49:45.850693 (MainThread): On master: COMMIT
+2020-04-29 03:49:45.850874 (MainThread): Using postgres connection "master".
+2020-04-29 03:49:45.851042 (MainThread): On master: COMMIT
+2020-04-29 03:49:45.851420 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:49:45.852082 (MainThread): 06:49:45 | 
+2020-04-29 03:49:45.852386 (MainThread): 06:49:45 | Finished running 1 table model in 0.31s.
+2020-04-29 03:49:45.852644 (MainThread): Connection 'master' was left open.
+2020-04-29 03:49:45.852844 (MainThread): On master: Close
+2020-04-29 03:49:45.853092 (MainThread): Connection 'model.crstat_dbt.vandalism' was left open.
+2020-04-29 03:49:45.853284 (MainThread): On model.crstat_dbt.vandalism: Close
+2020-04-29 03:49:45.860484 (MainThread): 
+2020-04-29 03:49:45.860930 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:49:45.861255 (MainThread): 
+2020-04-29 03:49:45.861525 (MainThread): Database Error in model vandalism (models/example/vandalism.sql)
+2020-04-29 03:49:45.861802 (MainThread):   ОШИБКА:  отношение "dbt.crime" не существует
+2020-04-29 03:49:45.862062 (MainThread):   LINE 18:    select * from "postgres"."dbt"."crime"
+2020-04-29 03:49:45.862316 (MainThread):                             ^
+2020-04-29 03:49:45.862600 (MainThread):   compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:49:45.862871 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:49:45.863310 (MainThread): Flushing usage events
+2020-04-29 03:53:11.623361 (MainThread): Running with dbt=0.16.1
+2020-04-29 03:53:11.678785 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-04-29 03:53:11.679081 (MainThread): Tracking: do not track
+2020-04-29 03:53:11.694866 (MainThread): Partial parsing not enabled
+2020-04-29 03:53:11.696655 (MainThread): Parsing macros/core.sql
+2020-04-29 03:53:11.700876 (MainThread): Parsing macros/adapters/common.sql
+2020-04-29 03:53:11.737722 (MainThread): Parsing macros/etc/query.sql
+2020-04-29 03:53:11.738779 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-04-29 03:53:11.740726 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-04-29 03:53:11.741590 (MainThread): Parsing macros/etc/datetime.sql
+2020-04-29 03:53:11.749447 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-04-29 03:53:11.751384 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-04-29 03:53:11.752417 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-04-29 03:53:11.754040 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-04-29 03:53:11.755993 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-04-29 03:53:11.757097 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-04-29 03:53:11.758005 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-04-29 03:53:11.759127 (MainThread): Parsing macros/materializations/helpers.sql
+2020-04-29 03:53:11.766009 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-04-29 03:53:11.777162 (MainThread): Parsing macros/materializations/table/table.sql
+2020-04-29 03:53:11.783242 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-04-29 03:53:11.784916 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-04-29 03:53:11.813594 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-04-29 03:53:11.828067 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-04-29 03:53:11.829958 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-04-29 03:53:11.835537 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-04-29 03:53:11.853647 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-04-29 03:53:11.858119 (MainThread): Parsing macros/materializations/view/view.sql
+2020-04-29 03:53:11.863828 (MainThread): Parsing macros/relations.sql
+2020-04-29 03:53:11.865355 (MainThread): Parsing macros/adapters.sql
+2020-04-29 03:53:11.880325 (MainThread): Parsing macros/catalog.sql
+2020-04-29 03:53:11.882511 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-04-29 03:53:11.899052 (MainThread): Partial parsing not enabled
+2020-04-29 03:53:11.922768 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:53:11.922915 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:53:11.997325 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:53:11.997483 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:53:12.005937 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-04-29 03:53:12.006085 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:53:12.014333 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:53:12.014486 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:53:12.021051 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-04-29 03:53:12.021200 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:53:12.132383 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-04-29 03:53:12.134841 (MainThread): 
+2020-04-29 03:53:12.135163 (MainThread): Acquiring new postgres connection "master".
+2020-04-29 03:53:12.135229 (MainThread): Opening a new connection, currently in state init
+2020-04-29 03:53:12.139556 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-04-29 03:53:12.139864 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-04-29 03:53:12.218961 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-04-29 03:53:12.219129 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-04-29 03:53:12.224291 (ThreadPoolExecutor-0_0): SQL status: SELECT 8 in 0.01 seconds
+2020-04-29 03:53:12.269751 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-04-29 03:53:12.270146 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-04-29 03:53:12.273560 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:53:12.273836 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-04-29 03:53:12.274435 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:53:12.274649 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-04-29 03:53:12.274796 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-04-29 03:53:12.278677 (ThreadPoolExecutor-1_0): SQL status: SELECT 2 in 0.00 seconds
+2020-04-29 03:53:12.283341 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-04-29 03:53:12.335285 (MainThread): Using postgres connection "master".
+2020-04-29 03:53:12.335515 (MainThread): On master: BEGIN
+2020-04-29 03:53:12.339393 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:53:12.339591 (MainThread): Using postgres connection "master".
+2020-04-29 03:53:12.339665 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-04-29 03:53:12.345544 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-04-29 03:53:12.347488 (MainThread): On master: ROLLBACK
+2020-04-29 03:53:12.347822 (MainThread): Using postgres connection "master".
+2020-04-29 03:53:12.347923 (MainThread): On master: BEGIN
+2020-04-29 03:53:12.348244 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:53:12.348373 (MainThread): On master: COMMIT
+2020-04-29 03:53:12.348444 (MainThread): Using postgres connection "master".
+2020-04-29 03:53:12.348511 (MainThread): On master: COMMIT
+2020-04-29 03:53:12.348681 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:53:12.349025 (MainThread): 06:53:12 | Concurrency: 1 threads (target='dev')
+2020-04-29 03:53:12.349171 (MainThread): 06:53:12 | 
+2020-04-29 03:53:12.352085 (Thread-1): Began running node model.crstat_dbt.vandalism
+2020-04-29 03:53:12.352505 (Thread-1): 06:53:12 | 1 of 1 START table model dbt.vandalism............................... [RUN]
+2020-04-29 03:53:12.353251 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:53:12.353493 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-04-29 03:53:12.353722 (Thread-1): Compiling model.crstat_dbt.vandalism
+2020-04-29 03:53:12.390572 (Thread-1): Writing injected SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:53:12.391376 (Thread-1): finished collecting timing info
+2020-04-29 03:53:12.415026 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:53:12.415210 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_tmp" cascade
+2020-04-29 03:53:12.415865 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:53:12.418401 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:53:12.418554 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_backup" cascade
+2020-04-29 03:53:12.418897 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-04-29 03:53:12.432588 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.vandalism"
+2020-04-29 03:53:12.433084 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:53:12.433196 (Thread-1): On model.crstat_dbt.vandalism: BEGIN
+2020-04-29 03:53:12.433493 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:53:12.433602 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-04-29 03:53:12.433689 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+
+
+  create  table "postgres"."dbt"."vandalism__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+--
+
+with source_data as (
+
+   select * from "postgres"."dbt"."crime"
+)
+
+select *
+from source_data
+where OFFENSE_CODE_GROUP = 'Vandalism'
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-04-29 03:53:12.434125 (Thread-1): Postgres error: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+2020-04-29 03:53:12.434251 (Thread-1): On model.crstat_dbt.vandalism: ROLLBACK
+2020-04-29 03:53:12.434500 (Thread-1): finished collecting timing info
+2020-04-29 03:53:12.435150 (Thread-1): Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 46, in exception_handler
+    yield
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "dbt.crime" не существует
+LINE 18:    select * from "postgres"."dbt"."crime"
+                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 62, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 217, in execute
+    return self.connections.execute(
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 116, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 82, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 58, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model vandalism (models/example/vandalism.sql)
+  ОШИБКА:  отношение "dbt.crime" не существует
+  LINE 18:    select * from "postgres"."dbt"."crime"
+                            ^
+  compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:53:12.436427 (Thread-1): 06:53:12 | 1 of 1 ERROR creating table model dbt.vandalism...................... [ERROR in 0.08s]
+2020-04-29 03:53:12.436556 (Thread-1): Finished running node model.crstat_dbt.vandalism
+2020-04-29 03:53:12.438242 (MainThread): Using postgres connection "master".
+2020-04-29 03:53:12.438485 (MainThread): On master: BEGIN
+2020-04-29 03:53:12.438875 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-04-29 03:53:12.439104 (MainThread): On master: COMMIT
+2020-04-29 03:53:12.439248 (MainThread): Using postgres connection "master".
+2020-04-29 03:53:12.439380 (MainThread): On master: COMMIT
+2020-04-29 03:53:12.439651 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-04-29 03:53:12.440211 (MainThread): 06:53:12 | 
+2020-04-29 03:53:12.440477 (MainThread): 06:53:12 | Finished running 1 table model in 0.31s.
+2020-04-29 03:53:12.440695 (MainThread): Connection 'master' was left open.
+2020-04-29 03:53:12.440865 (MainThread): On master: Close
+2020-04-29 03:53:12.441091 (MainThread): Connection 'model.crstat_dbt.vandalism' was left open.
+2020-04-29 03:53:12.441261 (MainThread): On model.crstat_dbt.vandalism: Close
+2020-04-29 03:53:12.447073 (MainThread): 
+2020-04-29 03:53:12.447434 (MainThread): Completed with 1 error and 0 warnings:
+2020-04-29 03:53:12.447696 (MainThread): 
+2020-04-29 03:53:12.447976 (MainThread): Database Error in model vandalism (models/example/vandalism.sql)
+2020-04-29 03:53:12.448180 (MainThread):   ОШИБКА:  отношение "dbt.crime" не существует
+2020-04-29 03:53:12.448404 (MainThread):   LINE 18:    select * from "postgres"."dbt"."crime"
+2020-04-29 03:53:12.448598 (MainThread):                             ^
+2020-04-29 03:53:12.448779 (MainThread):   compiled SQL at target/run/crstat_dbt/example/vandalism.sql
+2020-04-29 03:53:12.448976 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-04-29 03:53:12.449349 (MainThread): Flushing usage events

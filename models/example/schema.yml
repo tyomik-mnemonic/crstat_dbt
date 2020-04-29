@@ -1,0 +1,31 @@
+
+version: 2
+
+models:
+    - name: vandalism
+      description: "A starter dbt model"
+      columns:
+          - name: INCIDENT_NUMBER
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: OFFENSE_CODE_GROUP
+            description: "OFFENSE_CODE_GROUP"
+            tests:
+                - unique
+                - not_null
+
+    #- name: crstat_dbt
+    #  description: "A starter dbt model"
+    #  columns:
+    #      - name: INCIDENT_NUMBER
+    #        description: "The primary key for this table"
+    #        tests:
+    #            - unique
+    #            - not_null
+    #      - name: OFFENSE_CODE_GROUP
+    #        description: "OFFENSE_CODE_GROUP"
+    #        tests:
+    #            - unique
+    #            - not_null
