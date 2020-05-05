@@ -2420,3 +2420,847 @@ dbt.exceptions.DatabaseException: Database Error in model vandalism (models/exam
 2020-04-29 03:53:12.448976 (MainThread): 
 Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
 2020-04-29 03:53:12.449349 (MainThread): Flushing usage events
+2020-05-05 02:02:30.194028 (MainThread): Running with dbt=0.16.1
+2020-05-05 02:02:30.263518 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', show=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2020-05-05 02:02:30.263809 (MainThread): Tracking: do not track
+2020-05-05 02:02:30.282669 (MainThread): Partial parsing not enabled
+2020-05-05 02:02:30.286097 (MainThread): Parsing macros/core.sql
+2020-05-05 02:02:30.290691 (MainThread): Parsing macros/adapters/common.sql
+2020-05-05 02:02:30.331164 (MainThread): Parsing macros/etc/query.sql
+2020-05-05 02:02:30.332496 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-05-05 02:02:30.334669 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-05-05 02:02:30.335762 (MainThread): Parsing macros/etc/datetime.sql
+2020-05-05 02:02:30.344720 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-05-05 02:02:30.346923 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-05-05 02:02:30.348033 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-05-05 02:02:30.349811 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-05-05 02:02:30.351949 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-05-05 02:02:30.353133 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-05-05 02:02:30.354112 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-05-05 02:02:30.355319 (MainThread): Parsing macros/materializations/helpers.sql
+2020-05-05 02:02:30.363242 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-05-05 02:02:30.374962 (MainThread): Parsing macros/materializations/table/table.sql
+2020-05-05 02:02:30.381880 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-05-05 02:02:30.383792 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-05-05 02:02:30.414668 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-05-05 02:02:30.432211 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-05-05 02:02:30.434352 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-05-05 02:02:30.440628 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-05-05 02:02:30.461931 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-05-05 02:02:30.467823 (MainThread): Parsing macros/materializations/view/view.sql
+2020-05-05 02:02:30.474680 (MainThread): Parsing macros/relations.sql
+2020-05-05 02:02:30.476236 (MainThread): Parsing macros/adapters.sql
+2020-05-05 02:02:30.492379 (MainThread): Parsing macros/catalog.sql
+2020-05-05 02:02:30.494923 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-05-05 02:02:30.512859 (MainThread): Partial parsing not enabled
+2020-05-05 02:02:30.539610 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 02:02:30.539754 (MainThread): Opening a new connection, currently in state init
+2020-05-05 02:02:30.618971 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-05-05 02:02:30.619115 (MainThread): Opening a new connection, currently in state init
+2020-05-05 02:02:30.627407 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-05-05 02:02:30.627568 (MainThread): Opening a new connection, currently in state init
+2020-05-05 02:02:30.635987 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-05-05 02:02:30.636123 (MainThread): Opening a new connection, currently in state init
+2020-05-05 02:02:30.642477 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-05-05 02:02:30.642613 (MainThread): Opening a new connection, currently in state init
+2020-05-05 02:02:30.763690 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-05-05 02:02:30.766069 (MainThread): 
+2020-05-05 02:02:30.766354 (MainThread): Acquiring new postgres connection "master".
+2020-05-05 02:02:30.766421 (MainThread): Opening a new connection, currently in state init
+2020-05-05 02:02:30.771169 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-05-05 02:02:30.771470 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-05-05 02:02:30.876122 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-05-05 02:02:30.876272 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-05-05 02:02:30.895123 (ThreadPoolExecutor-0_0): SQL status: SELECT 8 in 0.02 seconds
+2020-05-05 02:02:30.916625 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-05-05 02:02:30.916885 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-05-05 02:02:30.919799 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-05-05 02:02:30.920015 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-05-05 02:02:30.921139 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-05-05 02:02:30.921398 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-05-05 02:02:30.921554 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-05-05 02:02:30.930368 (ThreadPoolExecutor-1_0): SQL status: SELECT 2 in 0.01 seconds
+2020-05-05 02:02:30.935426 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-05-05 02:02:30.959084 (MainThread): Using postgres connection "master".
+2020-05-05 02:02:30.959216 (MainThread): On master: BEGIN
+2020-05-05 02:02:30.963883 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 02:02:30.964056 (MainThread): Using postgres connection "master".
+2020-05-05 02:02:30.964128 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-05-05 02:02:30.973545 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-05-05 02:02:30.975799 (MainThread): On master: ROLLBACK
+2020-05-05 02:02:30.976036 (MainThread): Using postgres connection "master".
+2020-05-05 02:02:30.976122 (MainThread): On master: BEGIN
+2020-05-05 02:02:30.976337 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 02:02:30.976459 (MainThread): On master: COMMIT
+2020-05-05 02:02:30.976527 (MainThread): Using postgres connection "master".
+2020-05-05 02:02:30.976589 (MainThread): On master: COMMIT
+2020-05-05 02:02:30.976718 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-05-05 02:02:30.977001 (MainThread): 05:02:30 | Concurrency: 1 threads (target='dev')
+2020-05-05 02:02:30.977117 (MainThread): 05:02:30 | 
+2020-05-05 02:02:30.982382 (Thread-1): Began running node seed.crstat_dbt.crime
+2020-05-05 02:02:30.982782 (Thread-1): 05:02:30 | 1 of 1 START seed file dbt.crime..................................... [RUN]
+2020-05-05 02:02:30.983426 (Thread-1): Acquiring new postgres connection "seed.crstat_dbt.crime".
+2020-05-05 02:02:30.983626 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-05-05 02:02:30.983839 (Thread-1): finished collecting timing info
+2020-05-05 02:02:31.048535 (Thread-1): finished collecting timing info
+2020-05-05 02:02:31.048990 (Thread-1): Compilation Error in seed crime (data/crime.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+  
+  > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+  > called by seed crime (data/crime.csv)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/context/providers.py", line 539, in load_agate_table
+    table = agate_helper.from_csv(path, text_columns=column_types)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/agate_helper.py", line 118, in from_csv
+    if fp.read(1) != BOM:
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 223, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 166, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 268, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/lib/python3.8/site-packages/dbt/node_runners.py", line 450, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 231, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/clients/jinja.py", line 161, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 380, in macro
+  File "/usr/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/lib/python3.8/site-packages/dbt/context/providers.py", line 541, in load_agate_table
+    raise_compiler_error(str(e))
+  File "/usr/lib/python3.8/site-packages/dbt/exceptions.py", line 363, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in seed crime (data/crime.csv)
+  'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+  
+  > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+  > called by seed crime (data/crime.csv)
+2020-05-05 02:02:31.051932 (Thread-1): 05:02:31 | 1 of 1 ERROR loading seed file dbt.crime............................. [ERROR in 0.07s]
+2020-05-05 02:02:31.052050 (Thread-1): Finished running node seed.crstat_dbt.crime
+2020-05-05 02:02:31.053363 (MainThread): Using postgres connection "master".
+2020-05-05 02:02:31.053533 (MainThread): On master: BEGIN
+2020-05-05 02:02:31.053849 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 02:02:31.053947 (MainThread): On master: COMMIT
+2020-05-05 02:02:31.054013 (MainThread): Using postgres connection "master".
+2020-05-05 02:02:31.054076 (MainThread): On master: COMMIT
+2020-05-05 02:02:31.054237 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-05-05 02:02:31.054498 (MainThread): 05:02:31 | 
+2020-05-05 02:02:31.054610 (MainThread): 05:02:31 | Finished running 1 seed in 0.29s.
+2020-05-05 02:02:31.054733 (MainThread): Connection 'master' was left open.
+2020-05-05 02:02:31.054815 (MainThread): On master: Close
+2020-05-05 02:02:31.054923 (MainThread): Connection 'seed.crstat_dbt.crime' was left open.
+2020-05-05 02:02:31.054998 (MainThread): On seed.crstat_dbt.crime: Close
+2020-05-05 02:02:31.060761 (MainThread): 
+2020-05-05 02:02:31.061174 (MainThread): Completed with 1 error and 0 warnings:
+2020-05-05 02:02:31.061550 (MainThread): 
+2020-05-05 02:02:31.061776 (MainThread): Compilation Error in seed crime (data/crime.csv)
+2020-05-05 02:02:31.061958 (MainThread):   'utf-8' codec can't decode byte 0xa0 in position 8190: invalid start byte
+2020-05-05 02:02:31.062125 (MainThread):   
+2020-05-05 02:02:31.062287 (MainThread):   > in macro materialization_seed_default (macros/materializations/seed/seed.sql)
+2020-05-05 02:02:31.062448 (MainThread):   > called by seed crime (data/crime.csv)
+2020-05-05 02:02:31.062621 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2020-05-05 02:02:31.062828 (MainThread): Flushing usage events
+2020-05-05 15:22:18.053864 (MainThread): Running with dbt=0.16.1
+2020-05-05 15:22:18.166569 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', show=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2020-05-05 15:22:18.167213 (MainThread): Tracking: do not track
+2020-05-05 15:22:18.193002 (MainThread): Partial parsing not enabled
+2020-05-05 15:22:18.197233 (MainThread): Parsing macros/core.sql
+2020-05-05 15:22:18.204842 (MainThread): Parsing macros/adapters/common.sql
+2020-05-05 15:22:18.264258 (MainThread): Parsing macros/etc/query.sql
+2020-05-05 15:22:18.266133 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-05-05 15:22:18.269234 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-05-05 15:22:18.270854 (MainThread): Parsing macros/etc/datetime.sql
+2020-05-05 15:22:18.283589 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-05-05 15:22:18.286776 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-05-05 15:22:18.288312 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-05-05 15:22:18.290746 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-05-05 15:22:18.293809 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-05-05 15:22:18.295536 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-05-05 15:22:18.297007 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-05-05 15:22:18.298767 (MainThread): Parsing macros/materializations/helpers.sql
+2020-05-05 15:22:18.310009 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-05-05 15:22:18.328387 (MainThread): Parsing macros/materializations/table/table.sql
+2020-05-05 15:22:18.338309 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-05-05 15:22:18.341087 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-05-05 15:22:18.387911 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-05-05 15:22:18.411936 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-05-05 15:22:18.415002 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-05-05 15:22:18.424111 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-05-05 15:22:18.454128 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-05-05 15:22:18.461791 (MainThread): Parsing macros/materializations/view/view.sql
+2020-05-05 15:22:18.472248 (MainThread): Parsing macros/relations.sql
+2020-05-05 15:22:18.474617 (MainThread): Parsing macros/adapters.sql
+2020-05-05 15:22:18.498619 (MainThread): Parsing macros/catalog.sql
+2020-05-05 15:22:18.502320 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-05-05 15:22:18.529508 (MainThread): Partial parsing not enabled
+2020-05-05 15:22:18.567225 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 15:22:18.567483 (MainThread): Opening a new connection, currently in state init
+2020-05-05 15:22:18.698760 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-05-05 15:22:18.699027 (MainThread): Opening a new connection, currently in state init
+2020-05-05 15:22:18.712796 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-05-05 15:22:18.713053 (MainThread): Opening a new connection, currently in state init
+2020-05-05 15:22:18.726446 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-05-05 15:22:18.726705 (MainThread): Opening a new connection, currently in state init
+2020-05-05 15:22:18.737255 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-05-05 15:22:18.737516 (MainThread): Opening a new connection, currently in state init
+2020-05-05 15:22:18.914700 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-05-05 15:22:18.918655 (MainThread): 
+2020-05-05 15:22:18.919193 (MainThread): Acquiring new postgres connection "master".
+2020-05-05 15:22:18.919303 (MainThread): Opening a new connection, currently in state init
+2020-05-05 15:22:18.926808 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-05-05 15:22:18.927237 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-05-05 15:22:19.046579 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-05-05 15:22:19.046853 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-05-05 15:22:19.055141 (ThreadPoolExecutor-0_0): SQL status: SELECT 8 in 0.01 seconds
+2020-05-05 15:22:19.085923 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-05-05 15:22:19.086311 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-05-05 15:22:19.088502 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-05-05 15:22:19.088636 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-05-05 15:22:19.090483 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-05-05 15:22:19.090810 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-05-05 15:22:19.091014 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-05-05 15:22:19.095555 (ThreadPoolExecutor-1_0): SQL status: SELECT 2 in 0.00 seconds
+2020-05-05 15:22:19.099132 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-05-05 15:22:19.129162 (MainThread): Using postgres connection "master".
+2020-05-05 15:22:19.129449 (MainThread): On master: BEGIN
+2020-05-05 15:22:19.135256 (MainThread): SQL status: BEGIN in 0.01 seconds
+2020-05-05 15:22:19.135581 (MainThread): Using postgres connection "master".
+2020-05-05 15:22:19.135731 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-05-05 15:22:19.142943 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-05-05 15:22:19.145786 (MainThread): On master: ROLLBACK
+2020-05-05 15:22:19.146340 (MainThread): Using postgres connection "master".
+2020-05-05 15:22:19.146486 (MainThread): On master: BEGIN
+2020-05-05 15:22:19.147042 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 15:22:19.147179 (MainThread): On master: COMMIT
+2020-05-05 15:22:19.147276 (MainThread): Using postgres connection "master".
+2020-05-05 15:22:19.147355 (MainThread): On master: COMMIT
+2020-05-05 15:22:19.147675 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-05-05 15:22:19.148243 (MainThread): 18:22:19 | Concurrency: 1 threads (target='dev')
+2020-05-05 15:22:19.148487 (MainThread): 18:22:19 | 
+2020-05-05 15:22:19.155557 (Thread-1): Began running node seed.crstat_dbt.crime
+2020-05-05 15:22:19.155999 (Thread-1): 18:22:19 | 1 of 1 START seed file dbt.crime..................................... [RUN]
+2020-05-05 15:22:19.156759 (Thread-1): Acquiring new postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:22:19.156960 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-05-05 15:22:19.157171 (Thread-1): finished collecting timing info
+2020-05-05 15:22:22.851464 (Thread-1): Column 0 has no name. Using "a".
+2020-05-05 15:23:39.102452 (Thread-1): * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+default value of False was chosen. The default will change to True in a future
+release.
+
+For more information, see:
+https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+2020-05-05 15:23:56.298242 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:23:56.298531 (Thread-1): On seed.crstat_dbt.crime: BEGIN
+2020-05-05 15:23:56.300264 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-05-05 15:23:56.300363 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:23:56.300419 (Thread-1): On seed.crstat_dbt.crime: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "seed.crstat_dbt.crime"} */
+
+    create table "postgres"."dbt"."crime" (a integer,INCIDENT_NUMBER text,OFFENSE_CODE integer,OFFENSE_CODE_GROUP text,OFFENSE_DESCRIPTION text,DISTRICT text,REPORTING_AREA integer,SHOOTING text,OCCURRED_ON_DATE timestamp without time zone,YEAR integer,MONTH integer,DAY_OF_WEEK text,HOUR integer,UCR_PART text,STREET text,Lat float8,Long float8,Location text)
+  
+2020-05-05 15:23:56.315217 (Thread-1): SQL status: CREATE TABLE in 0.01 seconds
+2020-05-05 15:23:56.778156 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:23:56.778451 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:23:57.400200 (Thread-1): SQL status: INSERT 0 10000 in 0.62 seconds
+2020-05-05 15:23:57.941398 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:23:57.941727 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:23:58.747798 (Thread-1): SQL status: INSERT 0 10000 in 0.81 seconds
+2020-05-05 15:23:59.446200 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:23:59.446533 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:00.199210 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:00.892206 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:00.892545 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:01.616408 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:02.321079 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:02.321426 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:03.078455 (Thread-1): SQL status: INSERT 0 10000 in 0.76 seconds
+2020-05-05 15:24:03.778439 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:03.778798 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:04.534532 (Thread-1): SQL status: INSERT 0 10000 in 0.76 seconds
+2020-05-05 15:24:05.229035 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:05.229352 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:05.983598 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:06.677594 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:06.677932 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:07.398235 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:08.092061 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:08.092396 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:08.813054 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:09.506376 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:09.506708 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:10.233924 (Thread-1): SQL status: INSERT 0 10000 in 0.73 seconds
+2020-05-05 15:24:10.922174 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:10.922526 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:11.639254 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:12.329191 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:12.329556 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:13.067508 (Thread-1): SQL status: INSERT 0 10000 in 0.74 seconds
+2020-05-05 15:24:13.760933 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:13.761272 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:14.505972 (Thread-1): SQL status: INSERT 0 10000 in 0.74 seconds
+2020-05-05 15:24:15.198631 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:15.198965 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:15.950633 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:16.640053 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:16.640394 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:17.391078 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:18.085163 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:18.085499 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:18.805925 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:19.508543 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:19.508890 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:20.236975 (Thread-1): SQL status: INSERT 0 10000 in 0.73 seconds
+2020-05-05 15:24:20.933623 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:20.933960 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:21.654392 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:22.356166 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:22.356514 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:23.094518 (Thread-1): SQL status: INSERT 0 10000 in 0.74 seconds
+2020-05-05 15:24:23.788276 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:23.788612 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:24.507531 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:25.210642 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:25.210976 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:25.963364 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:26.655518 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:26.655854 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:27.378954 (Thread-1): SQL status: INSERT 0 10000 in 0.72 seconds
+2020-05-05 15:24:28.068171 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:28.068506 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:28.813111 (Thread-1): SQL status: INSERT 0 10000 in 0.74 seconds
+2020-05-05 15:24:29.514354 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:29.514688 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:30.265889 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:30.963480 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:30.963823 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:31.714892 (Thread-1): SQL status: INSERT 0 10000 in 0.75 seconds
+2020-05-05 15:24:32.410561 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:32.410897 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:33.137087 (Thread-1): SQL status: INSERT 0 10000 in 0.73 seconds
+2020-05-05 15:24:33.835368 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:33.835691 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:34.600603 (Thread-1): SQL status: INSERT 0 10000 in 0.76 seconds
+2020-05-05 15:24:35.290353 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:35.290698 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:36.059620 (Thread-1): SQL status: INSERT 0 10000 in 0.77 seconds
+2020-05-05 15:24:36.755180 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:36.755513 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:37.491596 (Thread-1): SQL status: INSERT 0 10000 in 0.74 seconds
+2020-05-05 15:24:38.187360 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:38.187692 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:38.913651 (Thread-1): SQL status: INSERT 0 10000 in 0.73 seconds
+2020-05-05 15:24:39.605520 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:39.605844 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:40.367805 (Thread-1): SQL status: INSERT 0 10000 in 0.76 seconds
+2020-05-05 15:24:40.993992 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:40.994342 (Thread-1): On seed.crstat_dbt.crime: 
+            insert into "postgres"."dbt"."crime" (a, INCIDENT_NUMBER, OFFENSE_CODE, OFFENSE_CODE_GROUP, OFFENSE_DESCRIPTION, DISTRICT, REPORTING_AREA, SHOOTING, OCCURRED_ON_DATE, YEAR, MONTH, DAY_OF_WEEK, HOUR, UCR_PART, STREET, Lat, Long, Location) values
+            (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+2020-05-05 15:24:41.660517 (Thread-1): SQL status: INSERT 0 9073 in 0.67 seconds
+2020-05-05 15:24:41.668679 (Thread-1): Writing runtime SQL for node "seed.crstat_dbt.crime"
+2020-05-05 15:24:41.673218 (Thread-1): On seed.crstat_dbt.crime: COMMIT
+2020-05-05 15:24:41.673417 (Thread-1): Using postgres connection "seed.crstat_dbt.crime".
+2020-05-05 15:24:41.673520 (Thread-1): On seed.crstat_dbt.crime: COMMIT
+2020-05-05 15:24:41.684312 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-05-05 15:24:41.691820 (Thread-1): finished collecting timing info
+2020-05-05 15:24:41.693484 (Thread-1): 18:24:41 | 1 of 1 OK loaded seed file dbt.crime................................. [INSERT 319073 in 142.54s]
+2020-05-05 15:24:41.693788 (Thread-1): Finished running node seed.crstat_dbt.crime
+2020-05-05 15:24:41.696222 (MainThread): Using postgres connection "master".
+2020-05-05 15:24:41.696524 (MainThread): On master: BEGIN
+2020-05-05 15:24:41.697176 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 15:24:41.697383 (MainThread): On master: COMMIT
+2020-05-05 15:24:41.697600 (MainThread): Using postgres connection "master".
+2020-05-05 15:24:41.697766 (MainThread): On master: COMMIT
+2020-05-05 15:24:41.698239 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-05-05 15:24:41.698987 (MainThread): 18:24:41 | 
+2020-05-05 15:24:41.699269 (MainThread): 18:24:41 | Finished running 1 seed in 142.78s.
+2020-05-05 15:24:41.699513 (MainThread): Connection 'master' was left open.
+2020-05-05 15:24:41.699685 (MainThread): On master: Close
+2020-05-05 15:24:41.699956 (MainThread): Connection 'seed.crstat_dbt.crime' was left open.
+2020-05-05 15:24:41.700123 (MainThread): On seed.crstat_dbt.crime: Close
+2020-05-05 15:24:41.707721 (MainThread): 
+2020-05-05 15:24:41.708116 (MainThread): Completed successfully
+2020-05-05 15:24:41.708413 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2020-05-05 15:24:41.708824 (MainThread): Flushing usage events
+2020-05-05 17:59:36.306899 (MainThread): Running with dbt=0.16.1
+2020-05-05 17:59:36.420986 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/toemik/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-05-05 17:59:36.421750 (MainThread): Tracking: do not track
+2020-05-05 17:59:36.447632 (MainThread): Partial parsing not enabled
+2020-05-05 17:59:36.452516 (MainThread): Parsing macros/core.sql
+2020-05-05 17:59:36.460117 (MainThread): Parsing macros/adapters/common.sql
+2020-05-05 17:59:36.519722 (MainThread): Parsing macros/etc/query.sql
+2020-05-05 17:59:36.521698 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-05-05 17:59:36.524784 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-05-05 17:59:36.526364 (MainThread): Parsing macros/etc/datetime.sql
+2020-05-05 17:59:36.539093 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-05-05 17:59:36.542230 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-05-05 17:59:36.543784 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-05-05 17:59:36.546274 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-05-05 17:59:36.549240 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-05-05 17:59:36.551017 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-05-05 17:59:36.552487 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-05-05 17:59:36.554292 (MainThread): Parsing macros/materializations/helpers.sql
+2020-05-05 17:59:36.565505 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-05-05 17:59:36.583845 (MainThread): Parsing macros/materializations/table/table.sql
+2020-05-05 17:59:36.593666 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-05-05 17:59:36.597186 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-05-05 17:59:36.644387 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-05-05 17:59:36.668359 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-05-05 17:59:36.671384 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-05-05 17:59:36.680385 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-05-05 17:59:36.709787 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-05-05 17:59:36.717105 (MainThread): Parsing macros/materializations/view/view.sql
+2020-05-05 17:59:36.726911 (MainThread): Parsing macros/relations.sql
+2020-05-05 17:59:36.729214 (MainThread): Parsing macros/adapters.sql
+2020-05-05 17:59:36.753211 (MainThread): Parsing macros/catalog.sql
+2020-05-05 17:59:36.756785 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-05-05 17:59:36.784566 (MainThread): Partial parsing not enabled
+2020-05-05 17:59:36.823205 (MainThread): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:36.823471 (MainThread): Opening a new connection, currently in state init
+2020-05-05 17:59:36.955459 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_INCIDENT_NUMBER".
+2020-05-05 17:59:36.955731 (MainThread): Opening a new connection, currently in state init
+2020-05-05 17:59:36.969592 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_INCIDENT_NUMBER".
+2020-05-05 17:59:36.969857 (MainThread): Opening a new connection, currently in state init
+2020-05-05 17:59:36.983286 (MainThread): Acquiring new postgres connection "test.crstat_dbt.unique_vandalism_OFFENSE_CODE_GROUP".
+2020-05-05 17:59:36.983564 (MainThread): Opening a new connection, currently in state init
+2020-05-05 17:59:36.994205 (MainThread): Acquiring new postgres connection "test.crstat_dbt.not_null_vandalism_OFFENSE_CODE_GROUP".
+2020-05-05 17:59:36.994462 (MainThread): Opening a new connection, currently in state init
+2020-05-05 17:59:37.175878 (MainThread): Found 1 model, 4 tests, 0 snapshots, 0 analyses, 127 macros, 0 operations, 1 seed file, 0 sources
+2020-05-05 17:59:37.179854 (MainThread): 
+2020-05-05 17:59:37.180412 (MainThread): Acquiring new postgres connection "master".
+2020-05-05 17:59:37.180529 (MainThread): Opening a new connection, currently in state init
+2020-05-05 17:59:37.188211 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_postgres".
+2020-05-05 17:59:37.188645 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-05-05 17:59:37.324853 (ThreadPoolExecutor-0_0): Using postgres connection "list_postgres".
+2020-05-05 17:59:37.325124 (ThreadPoolExecutor-0_0): On list_postgres: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-05-05 17:59:37.333875 (ThreadPoolExecutor-0_0): SQL status: SELECT 8 in 0.01 seconds
+2020-05-05 17:59:37.381629 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_postgres_dbt".
+2020-05-05 17:59:37.382118 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_postgres).
+2020-05-05 17:59:37.385596 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-05-05 17:59:37.385807 (ThreadPoolExecutor-1_0): On list_postgres_dbt: BEGIN
+2020-05-05 17:59:37.389269 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2020-05-05 17:59:37.389505 (ThreadPoolExecutor-1_0): Using postgres connection "list_postgres_dbt".
+2020-05-05 17:59:37.389657 (ThreadPoolExecutor-1_0): On list_postgres_dbt: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "list_postgres_dbt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2020-05-05 17:59:37.394259 (ThreadPoolExecutor-1_0): SQL status: SELECT 3 in 0.00 seconds
+2020-05-05 17:59:37.401229 (ThreadPoolExecutor-1_0): On list_postgres_dbt: ROLLBACK
+2020-05-05 17:59:37.450841 (MainThread): Using postgres connection "master".
+2020-05-05 17:59:37.451133 (MainThread): On master: BEGIN
+2020-05-05 17:59:37.456685 (MainThread): SQL status: BEGIN in 0.01 seconds
+2020-05-05 17:59:37.457054 (MainThread): Using postgres connection "master".
+2020-05-05 17:59:37.457204 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-05-05 17:59:37.465292 (MainThread): SQL status: SELECT 1 in 0.01 seconds
+2020-05-05 17:59:37.469237 (MainThread): On master: ROLLBACK
+2020-05-05 17:59:37.469803 (MainThread): Using postgres connection "master".
+2020-05-05 17:59:37.469977 (MainThread): On master: BEGIN
+2020-05-05 17:59:37.470746 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 17:59:37.470986 (MainThread): On master: COMMIT
+2020-05-05 17:59:37.471129 (MainThread): Using postgres connection "master".
+2020-05-05 17:59:37.471262 (MainThread): On master: COMMIT
+2020-05-05 17:59:37.471667 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-05-05 17:59:37.472318 (MainThread): 20:59:37 | Concurrency: 1 threads (target='dev')
+2020-05-05 17:59:37.472577 (MainThread): 20:59:37 | 
+2020-05-05 17:59:37.480099 (Thread-1): Began running node model.crstat_dbt.vandalism
+2020-05-05 17:59:37.480585 (Thread-1): 20:59:37 | 1 of 1 START table model dbt.vandalism............................... [RUN]
+2020-05-05 17:59:37.481202 (Thread-1): Acquiring new postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.481317 (Thread-1): Re-using an available connection from the pool (formerly list_postgres_dbt).
+2020-05-05 17:59:37.481424 (Thread-1): Compiling model.crstat_dbt.vandalism
+2020-05-05 17:59:37.509398 (Thread-1): Writing injected SQL for node "model.crstat_dbt.vandalism"
+2020-05-05 17:59:37.510572 (Thread-1): finished collecting timing info
+2020-05-05 17:59:37.538012 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.538318 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_tmp" cascade
+2020-05-05 17:59:37.540383 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-05-05 17:59:37.543988 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.544231 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_backup" cascade
+2020-05-05 17:59:37.544770 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-05-05 17:59:37.565590 (Thread-1): Writing runtime SQL for node "model.crstat_dbt.vandalism"
+2020-05-05 17:59:37.566645 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.566765 (Thread-1): On model.crstat_dbt.vandalism: BEGIN
+2020-05-05 17:59:37.567432 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-05-05 17:59:37.567579 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.567663 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+
+
+  create  table "postgres"."dbt"."vandalism__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+--
+
+with source_data as (
+
+   select * from "postgres"."dbt"."crime"
+)
+
+select *
+from source_data
+where OFFENSE_CODE_GROUP = 'Vandalism'
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2020-05-05 17:59:37.684892 (Thread-1): SQL status: SELECT 15415 in 0.12 seconds
+2020-05-05 17:59:37.690380 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.690604 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+alter table "postgres"."dbt"."vandalism__dbt_tmp" rename to "vandalism"
+2020-05-05 17:59:37.691500 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-05-05 17:59:37.692827 (Thread-1): On model.crstat_dbt.vandalism: COMMIT
+2020-05-05 17:59:37.692956 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.693041 (Thread-1): On model.crstat_dbt.vandalism: COMMIT
+2020-05-05 17:59:37.705803 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-05-05 17:59:37.709341 (Thread-1): Using postgres connection "model.crstat_dbt.vandalism".
+2020-05-05 17:59:37.709615 (Thread-1): On model.crstat_dbt.vandalism: /* {"app": "dbt", "dbt_version": "0.16.1", "profile_name": "crstat_dbt", "target_name": "dev", "node_id": "model.crstat_dbt.vandalism"} */
+drop table if exists "postgres"."dbt"."vandalism__dbt_backup" cascade
+2020-05-05 17:59:37.710190 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-05-05 17:59:37.714651 (Thread-1): finished collecting timing info
+2020-05-05 17:59:37.715623 (Thread-1): 20:59:37 | 1 of 1 OK created table model dbt.vandalism.......................... [SELECT 15415 in 0.23s]
+2020-05-05 17:59:37.715811 (Thread-1): Finished running node model.crstat_dbt.vandalism
+2020-05-05 17:59:37.717811 (MainThread): Using postgres connection "master".
+2020-05-05 17:59:37.718109 (MainThread): On master: BEGIN
+2020-05-05 17:59:37.718672 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-05-05 17:59:37.718885 (MainThread): On master: COMMIT
+2020-05-05 17:59:37.719039 (MainThread): Using postgres connection "master".
+2020-05-05 17:59:37.719212 (MainThread): On master: COMMIT
+2020-05-05 17:59:37.719583 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-05-05 17:59:37.720219 (MainThread): 20:59:37 | 
+2020-05-05 17:59:37.720490 (MainThread): 20:59:37 | Finished running 1 table model in 0.54s.
+2020-05-05 17:59:37.720705 (MainThread): Connection 'master' was left open.
+2020-05-05 17:59:37.720859 (MainThread): On master: Close
+2020-05-05 17:59:37.721066 (MainThread): Connection 'model.crstat_dbt.vandalism' was left open.
+2020-05-05 17:59:37.721207 (MainThread): On model.crstat_dbt.vandalism: Close
+2020-05-05 17:59:37.727762 (MainThread): 
+2020-05-05 17:59:37.728196 (MainThread): Completed successfully
+2020-05-05 17:59:37.728416 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2020-05-05 17:59:37.728768 (MainThread): Flushing usage events
